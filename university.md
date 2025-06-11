@@ -38,3 +38,14 @@ AND `hour` > "14:00:00";
 SELECT \*
 FROM `degrees`
 WHERE `level` = "magistrale";
+
+7- Numero dipartimenti università:
+
+SELECT COUNT(\*)
+FROM `departments`;
+
+8- Insegnanti senza numero di telefono:
+
+SELECT COUNT(\*)
+FROM `teachers`
+WHERE `phone` IS NULL;
