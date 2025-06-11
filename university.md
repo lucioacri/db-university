@@ -25,3 +25,16 @@ SELECT \*
 FROM `courses`
 WHERE `period` = "I semestre"
 AND `year` = "1";
+
+5- Appelli esame dopo le 14 del 20/06/2020:
+
+SELECT \*
+FROM `exams`
+WHERE `date` = "2020-06-20"
+AND `hour` > "14:00:00";
+
+6- Corsi di laurea magistrale:
+
+SELECT \*
+FROM `degrees`
+WHERE `level` = "magistrale";
